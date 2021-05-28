@@ -1,0 +1,70 @@
+﻿@model Document_vault.Data.Document_Detail
+
+@{
+    ViewData["Title"] = "Details";
+}
+<link href="~/css/StyleSheet.css" rel="stylesheet" />
+<h4 class="display-6">Document Details</h4>
+
+<div>
+    
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DocType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DocType)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DocTraffic)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DocTraffic)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ProfileId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ProfileId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Subject)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Subject)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PriorityLevel)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PriorityLevel)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IsoNum)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IsoNum)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ScannedDoc)
+        </dt>
+
+        <dd class="col-sm-10">
+            <a href="~/@Model.ScannedDoc">Download_Document</a>
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Document_Date_Detail)
+        </dt>
+
+        <dd class="col-sm-10">
+            <a class="btn btn-outline-primary" asp-area="" asp-controller="Document_Date_Detail" asp-action="Index" >Date Detail</a>
+        </dd>
+
+
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.DocId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,119 @@
+﻿@model dcvault_.Models.Docs_detail
+
+@{
+    ViewData["Title"] = "Create";
+}
+<link href="~/css/StyleSheet.css" rel="stylesheet" />
+<h4 class="display-6">Upload Document</h4>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="DocType" class="control-label"></label>
+                <select asp-for="DocType" class="form-control">
+                    <option>PDF</option>
+                    <option>JPEG</option>
+                    <option>Others</option>
+
+                </select>
+                <span asp-validation-for="DocType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateId" class="control-label"></label>
+                <input asp-for="DateId" class="form-control" />
+                <span asp-validation-for="DateId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DocTraffic" class="control-label"></label>
+                <select asp-for="DocTraffic" class="form-control">
+                    <option>Yes</option>
+                    <option>No</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContactId" class="control-label"></label>
+                <input asp-for="ContactId" class="form-control" />
+                <span asp-validation-for="ContactId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProfileId" class="control-label"></label>
+                <input asp-for="ProfileId" class="form-control" />
+                <span asp-validation-for="ProfileId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Subject" class="control-label"></label>
+                <input asp-for="Subject" class="form-control" />
+                <span asp-validation-for="Subject" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PriorityLevel" class="control-label"></label>
+                <select asp-for="PriorityLevel" class="form-control">
+                    <option>High</option>
+                    <option>Medium</option>
+                    <option>Low</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="IsoNum" class="control-label"></label>
+                <input asp-for="IsoNum" class="form-control" />
+                <span asp-validation-for="IsoNum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StatusId" class="control-label"></label>
+                <input asp-for="StatusId" class="form-control" />
+                <span asp-validation-for="StatusId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Document_Date_Detail.DateReceived" class="control-label"></label>
+                <input asp-for="Document_Date_Detail.DateReceived" class="form-control" />
+                <span asp-validation-for="Document_Date_Detail.DateReceived" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Document_Date_Detail.DateSent" class="control-label"></label>
+                <input asp-for="Document_Date_Detail.DateSent" class="form-control" />
+                <span asp-validation-for="Document_Date_Detail.DateSent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Document_Date_Detail.ExpirationDate" class="control-label"></label>
+                <input asp-for="Document_Date_Detail.ExpirationDate" class="form-control" />
+                <span asp-validation-for="Document_Date_Detail.ExpirationDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status_Details.Comments" class="control-label"></label>
+                <input asp-for="Status_Details.Comments" class="form-control" />
+                <span asp-validation-for="Status_Details.Comments" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status_Details.Replied" class="control-label"></label>
+                <input asp-for="Status_Details.Replied" class="form-control" />
+                <span asp-validation-for="Status_Details.Replied" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status_Details.Viewed" class="control-label"></label>
+                <input asp-for="Status_Details.Viewed" class="form-control" />
+                <span asp-validation-for="Status_Details.Viewed" class="text-danger"></span>
+            </div>
+            <div>
+                <label asp-for="Image_" class="form-label">File</label>
+                <input class="form-control form-control-lg" id="formFileLg" asp-for="Image_">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
