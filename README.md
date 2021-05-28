@@ -20,3 +20,6 @@ Document Management System provides a API for users to create and manage documen
    * Delete documents
    * Manage Users
    * Delete Users
+
+# Usage
+ You can use app by locally by connection to your sql database by connection string.
