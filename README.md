@@ -43,9 +43,8 @@ Document Management System provides a API for users to create and manage documen
   Copyright @Shivang Parashari Application
   
 # Screenshort
- ![Uploading Screenshot (198).png…]()
- ![Screenshot (200)](https://user-images.githubusercontent.com/33532379/120015475-fea9b580-c000-11eb-8e8a-0f84fd01bb38.png)
- ![Screenshot (199)](https://user-images.githubusercontent.com/33532379/120015436-f5204d80-c000-11eb-8615-8bd4efa3d3ed.png 
+![Screenshot (198)](https://user-images.githubusercontent.com/33532379/120015643-2f89ea80-c001-11eb-8c78-9bd5ea8cb0fe.png)
+
 
 
 
