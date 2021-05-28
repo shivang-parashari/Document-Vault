@@ -12,4 +12,11 @@ Document Management System provides a API for users to create and manage documen
   * Edit documents
   *  Delete documents
   *  View documents
-   *  View All Documents (All Documents)
+  *  View All Documents (All Documents)
+
+* Admin
+ * View all  documents
+ * Edit documents
+ * Delete documents
+ * Manage Users
+ * Delete Users
