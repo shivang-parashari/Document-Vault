@@ -1,2 +1,2 @@
 # Document-Vault
-Build Status Coverage Status Code Climate
+Build |Status| Coverage| Status |Code
