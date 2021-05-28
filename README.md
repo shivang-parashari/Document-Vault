@@ -1,5 +1,3 @@
-![Screenshot (215)](https://user-images.githubusercontent.com/33532379/120016250-fc942680-c001-11eb-99e8-ffa0126198f5.png)
-![Uploading Screenshot (215).png…]()
 
 # Document-Vault
 Build |Status| Coverage| Status |Code
@@ -53,6 +51,7 @@ Document Management System provides a API for users to create and manage documen
 ![Screenshot (212)](https://user-images.githubusercontent.com/33532379/120016002-b2ab4080-c001-11eb-8c62-23e94cb4d0a5.png)
 ![Screenshot (214)](https://user-images.githubusercontent.com/33532379/120016013-b76ff480-c001-11eb-805b-96a0586e1dbf.png)
 ![Screenshot (216)](https://user-images.githubusercontent.com/33532379/120016043-bf2f9900-c001-11eb-808b-f6a9b9bf4382.png)
+![Screenshot (215)](https://user-images.githubusercontent.com/33532379/120016250-fc942680-c001-11eb-99e8-ffa0126198f5.png)
 
 
 
