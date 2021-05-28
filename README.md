@@ -1,4 +1,4 @@
-![Screenshot (203)](https://user-images.githubusercontent.com/33532379/120015887-87285600-c001-11eb-9492-18c8a6905b33.png)
+
 # Document-Vault
 Build |Status| Coverage| Status |Code
 
